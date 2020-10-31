@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Calculator</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class = "container">
+        <div class = "card bg-info" style="font-size: larger">
+            <div class= "card-header text-center bg-info mb-90"> Cost Calculator</div>
+            <div class="card-body bg-light">
+                <form class="w-50 m-auto">
+                    <div class="form-group">
+                        <label>House Area</label>
+                        <input type="number" name="" id="area" placeholder='Area in square feet' onchange="calculateCost()" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Cost per square feet</label>
+                        <input type="number" name="" id="costPerSqFt" placeholder="Enter cost in INR" onchange="calculateCost()" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Possession Charges</label>
+                        <input type="number" name="" id="possessionCharges" value="0" onchange="calculateCost()" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Registry Cost 5%</label>
+                        <input type="number" name="" id="registryCharges" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Commision Charges 1%</label>
+                        <input type="number" name="" id="commisionCharges" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label><b>Total Cost of raw flat</b></label>
+                        <input style="font-weight: 500;" type="number" name="" id="costOfRawFlat" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Total Cost including basic Furnishing</label>
+                        <input type="number" name="" id="totalCostWithFurnishing" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Transfer Cost (if applicable)</label>
+                        <input type="number" name="" id="transferCost" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-center bg-light"> 
+                    <b>The forms doesn't require a submit button, just press enter after you are done entering a value.</b>
+                <br>Basic furnishing includes wardrobes and modular kitchen.
+                <br> Tranfer charges -> 421 per SqFt
+                <br> &#169; 2020 Rachit Sharma</div>
+        </div>
+    </div>
+<script src="cost.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
