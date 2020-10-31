@@ -44,7 +44,7 @@ function basePriceChange(){
     var transferCost = parseFloat(area) * 421;
     
     document.getElementById('costOfRawFlat').value = costOfRawFlat;
-    document.getElementById('costPerSqFt').value = costPerSqFt;
+    document.getElementById('costPerSqFt').value = costPerSqFt.toFixed(1);
     document.getElementById('registryCharges').value = registryCharges;
     document.getElementById('commisionCharges').value = commisionCharges;
     document.getElementById('totalCostWithFurnishing').value = totalCostWithFurnishing;
