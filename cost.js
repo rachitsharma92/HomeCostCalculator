@@ -28,7 +28,7 @@ function basePriceChange(){
         var area= document.getElementById('area').value;
     }
     else{
-        var area = 1280;
+        var area = 1117;
         document.getElementById('area').value = 1117;
     }
     var basePrice = document.getElementById('basePrice').value;
