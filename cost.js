@@ -4,9 +4,9 @@ function calculateCost() {
     var costPerSqFt= document.getElementById('costPerSqFt').value;
     var possessionCharges= document.getElementById('possessionCharges').value;
 
-    var baseCost = parseFloat(area*costPerSqFt);
-    var registryCharges = baseCost * 0.05;
-    var commisionCharges = baseCost * 0.01;
+    var basePrice = parseFloat(area*costPerSqFt);
+    var registryCharges = basePrice * 0.05;
+    var commisionCharges = basePrice * 0.01;
     var costOfRawFlat = parseFloat(area*costPerSqFt) 
         + parseFloat(possessionCharges)
         + parseFloat(registryCharges)
@@ -15,6 +15,7 @@ function calculateCost() {
     var transferCost = parseFloat(area) * 421;
     
 
+    document.getElementById('basePrice').value = basePrice;
     document.getElementById('costOfRawFlat').value = costOfRawFlat;
     document.getElementById('registryCharges').value = registryCharges;
     document.getElementById('commisionCharges').value = commisionCharges;
